@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    public class bird : animal
+    public class Bird : Animal
     {
-        public bird()
+        public Bird()
         {
+            IsAMammal = true;
+            Lifespan = 20;
+            AverageWeight = 5;
+            CanBeAPet = "yes";
 
         }
 

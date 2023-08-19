@@ -2,51 +2,38 @@
 
 namespace Inheritance
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
-
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            
 
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-            var myBird = new bird();
-            {
-                myBird.Wingspan =5;
-                myBird.StateBird = "Indiana";
+                var myBird = new Bird();
+                myBird.Wingspan =6;
+                myBird.StateBird = " ";
                 myBird.EatsWorms = true;
                 myBird.CanSing = true;
 
-                var lizard = new reptile()
+                var lizard = new Reptile()
                 {
-                    IsScary = true,
+                    IsCute = true,
                     IsPoisonous = true,
                     Habitat = "swamp",
-                    IsSlimy = true
+                    IsSlimy = false,
                 };
 
-                var myAnimals = new animal[] { myBird, lizard };
+                var myAnimals = new Animal[] { myBird, lizard };
                 
                 foreach(var animal in myAnimals)
                 {
                     Console.WriteLine($"Mammal: {animal.IsAMammal}");
-                    Console.WriteLine($"Lifespan: {animal.Lifespan}");
-                    Console.WriteLine($"AverageWeight: {animal.AverageWeight}");
+                    Console.WriteLine($"Lifespan: {animal.Lifespan} years old");
+                    Console.WriteLine($"AverageWeight: {animal.AverageWeight} pounds");
                     Console.WriteLine($"CanBeAPet: {animal.CanBeAPet}");
                     Console.WriteLine($"");
                 }
-            };
+            
 
 
             /*Create an object of your Bird class
